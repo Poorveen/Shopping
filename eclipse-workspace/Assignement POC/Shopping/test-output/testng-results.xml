@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="12504" started-at="2020-05-13T19:25:04 IST" finished-at="2020-05-13T19:25:16 IST">
+  <suite name="Default suite" duration-ms="34738" started-at="2020-05-13T22:31:34 IST" finished-at="2020-05-13T22:32:09 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="12504" started-at="2020-05-13T19:25:04 IST" finished-at="2020-05-13T19:25:16 IST">
+    <test name="Default test" duration-ms="34738" started-at="2020-05-13T22:31:34 IST" finished-at="2020-05-13T22:32:09 IST">
       <class name="Test.SortLowesttoHighest">
-        <test-method status="PASS" signature="initializerDriver()[pri:0, instance:Test.SortLowesttoHighest@15d9bc04]" name="initializerDriver" is-config="true" duration-ms="8942" started-at="2020-05-13T19:25:04 IST" finished-at="2020-05-13T19:25:13 IST">
+        <test-method status="PASS" signature="initializerDriver()[pri:0, instance:Test.SortLowesttoHighest@473b46c3]" name="initializerDriver" is-config="true" duration-ms="13270" started-at="2020-05-13T22:31:34 IST" finished-at="2020-05-13T22:31:47 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializerDriver -->
-        <test-method status="FAIL" signature="lowsort()[pri:0, instance:Test.SortLowesttoHighest@15d9bc04]" name="lowsort" duration-ms="3514" started-at="2020-05-13T19:25:13 IST" finished-at="2020-05-13T19:25:16 IST">
+        <test-method status="FAIL" signature="lowsort()[pri:0, instance:Test.SortLowesttoHighest@473b46c3]" name="lowsort" duration-ms="20699" started-at="2020-05-13T22:31:47 IST" finished-at="2020-05-13T22:32:08 IST">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -22,7 +22,7 @@ at org.testng.Assert.fail(Assert.java:97)
 at org.testng.Assert.failNotEquals(Assert.java:968)
 at org.testng.Assert.assertTrue(Assert.java:43)
 at org.testng.Assert.assertTrue(Assert.java:53)
-at Test.SortLowesttoHighest.lowsort(SortLowesttoHighest.java:51)
+at Test.SortLowesttoHighest.lowsort(SortLowesttoHighest.java:68)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -57,6 +57,10 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- lowsort -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:Test.SortLowesttoHighest@473b46c3]" name="teardown" is-config="true" duration-ms="720" started-at="2020-05-13T22:32:08 IST" finished-at="2020-05-13T22:32:09 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
       </class> <!-- Test.SortLowesttoHighest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
