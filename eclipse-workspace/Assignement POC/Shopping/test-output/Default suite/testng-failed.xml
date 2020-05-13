@@ -5,6 +5,7 @@
     <classes>
       <class name="Test.SortLowesttoHighest">
         <methods>
+          <include name="teardown"/>
           <include name="initializerDriver"/>
           <include name="lowsort"/>
         </methods>
