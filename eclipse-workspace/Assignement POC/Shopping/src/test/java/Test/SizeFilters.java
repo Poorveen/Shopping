@@ -7,7 +7,7 @@ import org.openqa.selenium.By;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import pageObjects.LaunchPage;
+import pageObjects.Sizefilter;
 import resources.Base;
 
 
@@ -18,7 +18,7 @@ public class SizeFilters extends Base{
 		driver =initializerDriver(driver);
 		driver.get("https://react-shopping-cart-67954.firebaseapp.com");
 		
-		LaunchPage l = new LaunchPage(driver);
+		Sizefilter l = new Sizefilter(driver);
 		
 		l.getsizexs().click();
 		

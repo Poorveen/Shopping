@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 
 import resources.Base;
 
-public class LaunchPage {
+public class Sizefilter {
 	public WebDriver driver;
 	
 	//size filters
@@ -18,7 +18,7 @@ public class LaunchPage {
 	By xl  = By.xpath("(//div[@class='filters']/div/label/span) [6]");
 	By xxl  = By.xpath("(//div[@class='filters']/div/label/span) [7]");
 	
-	public LaunchPage(WebDriver driver) 
+	public Sizefilter(WebDriver driver) 
 	{
 		this.driver = driver;
 		

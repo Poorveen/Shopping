@@ -3,11 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="pageObjects.AddtoCart">
+      <class name="Test.SortLowesttoHighest">
         <methods>
-          <include name="addcart"/>
+          <include name="initializerDriver"/>
+          <include name="lowsort"/>
         </methods>
-      </class> <!-- pageObjects.AddtoCart -->
+      </class> <!-- Test.SortLowesttoHighest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

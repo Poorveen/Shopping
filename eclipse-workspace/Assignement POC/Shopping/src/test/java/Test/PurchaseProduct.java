@@ -8,7 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
-import pageObjects.AddtoCart;
+import pageObjects.Homepage;
 import resources.Base;
 
 public class PurchaseProduct extends Base {
@@ -18,7 +18,7 @@ public class PurchaseProduct extends Base {
 		driver =initializerDriver(driver);
 		driver.get("https://react-shopping-cart-67954.firebaseapp.com");
 		
-		AddtoCart ac = new AddtoCart(driver);
+		Homepage ac = new Homepage(driver);
 		
 		List<WebElement> products= driver.findElements(By.cssSelector("p.shelf-item__title"));
 		for(int i=0;i<products.size();i++) 
