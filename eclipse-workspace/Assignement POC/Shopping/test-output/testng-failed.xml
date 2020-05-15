@@ -3,13 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Test.SortLowesttoHighest">
+      <class name="Test.Addnewproduct">
         <methods>
+          <include name="addnewitem"/>
           <include name="teardown"/>
-          <include name="initializerDriver"/>
-          <include name="lowsort"/>
         </methods>
-      </class> <!-- Test.SortLowesttoHighest -->
+      </class> <!-- Test.Addnewproduct -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -12,11 +12,19 @@ public class Homepage {
 	By checkout = By.xpath("//div[@class='buy-btn']");
 	By closebutton=By.xpath("//div[@class='float-cart__close-btn']");
 	By Oderbysort= By.xpath("//div[@class='sort']//select");
+	By addquantity=By.xpath("//button[contains(text(),'+')]");
+	By cart		=	By.xpath("//span[@class='bag bag--float-cart-closed']");
+	
+	By removeitem = By.xpath("//div[@class='shelf-item__del']");
 	
 	
 	   public Homepage(WebDriver driver){
 		 this.driver = driver;
 	} 
+	   
+	   public WebElement getremoveitem() {
+			return driver.findElement(removeitem);
+		}
 	
 		public WebElement getAddcart() {
 			return driver.findElement(AddCart);
@@ -34,6 +42,15 @@ public class Homepage {
 		public WebElement Oderbysort() 
 		{
 			return driver.findElement(Oderbysort);
+		}
+		public WebElement getaddquantity() 
+		{
+			return driver.findElement(addquantity);
+		}
+		
+		public WebElement getcart() {
+			return driver.findElement(cart);
+			
 		}
 	}
 
