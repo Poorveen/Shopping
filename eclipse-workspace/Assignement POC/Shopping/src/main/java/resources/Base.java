@@ -30,8 +30,8 @@ public WebDriver initializerDriver(WebDriver driver) throws IOException {
 
 	String browserName=prop.getProperty("browser");
 	System.out.println(browserName);
-	String url=prop.getProperty("url");
-	System.out.println(url);	
+	//String url=prop.getProperty("url");
+	//System.out.println(url);	
 	
 	if(browserName.equals("chrome"))
 	{
@@ -41,7 +41,7 @@ public WebDriver initializerDriver(WebDriver driver) throws IOException {
 	}
 	else if(browserName.equals("firefox"))
 	{
-		System.setProperty("webdriver.firefox.driver",path+"\\resources\\geckodriver.exe");
+		System.setProperty("Webdriver.gecko.driver",path+"\\resources\\geckodriver.exe");
 		  driver = new FirefoxDriver();
 	}
 	else if(browserName.equals("IE"))
@@ -58,7 +58,7 @@ public WebDriver initializerDriver(WebDriver driver) throws IOException {
 }
   public void getScreenshot(String result) throws IOException {
 	 File src =((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-	 FileUtils.copyFile(src, new File(path+"\\screenshots\\"+result+"screenshot.png") );
+	 FileUtils.copyFile(src,new File(path+"\\screenshot\\"+result+"screenshot.png"));
   }
 }
 

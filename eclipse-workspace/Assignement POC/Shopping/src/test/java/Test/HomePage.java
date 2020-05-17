@@ -19,11 +19,10 @@ public class HomePage extends Base {
 
 	}
 
-	@Test(priority = 3)
+	@Test(priority = 3, groups = { "Demo" })
 	public void Titlename() {
 		String title = driver.getTitle();
 		Assert.assertEquals("React Shopping Cart", title);
-		System.out.println(title);
 	}
 
 	@AfterTest

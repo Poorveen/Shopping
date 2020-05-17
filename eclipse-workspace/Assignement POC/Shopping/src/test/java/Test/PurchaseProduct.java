@@ -14,7 +14,8 @@ import resources.Base;
 //Verify that user can successfully buy more than one products that were added to his/her cart
 
 public class PurchaseProduct extends Base {
-	@Test(priority = 2)
+
+	@Test(priority = 2, groups = { "Demo" })
 	public void productadd() throws IOException, InterruptedException {
 		driver = initializerDriver(driver);
 		driver.get("https://react-shopping-cart-67954.firebaseapp.com");

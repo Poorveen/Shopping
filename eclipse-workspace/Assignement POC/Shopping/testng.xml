@@ -1,15 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-	
+
 	<listeners>
-         <listener class-name="Test.Listeners"/>
-         <listener class-name="resources.ExtentReporterNG"/>
-         
- </listeners>	
-  <test thread-count="5" name="Test">
-    <classes>
-      <class name="Ecommerce.Shopping.AppTest"/>
-    </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+		<listener class-name="Test.Listeners" />
+		<listener class-name="resources.ExtentReporterNG" />
+
+	</listeners>
+	<test name="Verify that application is launch successfully, Verify the title of the page">
+		<classes>
+			<class name="Test.HomePage" />
+		</classes>
+	</test>
+	<test name="Verify that user can add to cart one or more products">
+		<classes>
+			<class name="Test.Addnewproduct" />
+		</classes>
+	</test>
+	<test
+		name="Verify that all the text – product, name, price is available">
+		<classes>
+			<class name="Test.Productinfo" />
+		</classes>
+	</test>
+	<test
+		name="Verify that user can successfully buy more than one products that were added to his/her cart">
+		<classes>
+			<class name="Test.PurchaseProduct" />
+		</classes>
+	</test>
+	<test name="Validate that item removed from cart">
+		<classes>
+			<class name="Test.RemoveItem" />
+		</classes>
+	</test>
+	<test name="Verify the title of the page">
+		<classes>
+			<class name="Test.HomePage" />
+		</classes>
+	</test>
+	<test
+		name="Verify that filtering functionality correctly">
+		<classes>
+			<class name="Test.SizeFilters" />
+		</classes>
+	</test>
+	<test
+		name="Verify that all the sort options work correctly Highest to Lowest">
+		<classes>
+			<class name="Test.SortHighesttoLowest" />
+		</classes>
+	</test>
+	<test
+		name="Verify that all the sort options work correctly Lowest to Highest">
+		<classes>
+			<class name="Test.SortLowesttoHighest" />
+		</classes>
+	</test>
+	<test
+		name="Validate the total amount of products in cart is equal to checkout amount.">
+		<classes>
+			<class name="Test.SumofProducts" />
+		</classes>
+	</test>
+</suite>
