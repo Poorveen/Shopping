@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <listeners>
-    <listener class-name="resources.ExtentReporterNG"/>
-  </listeners>
-  <test thread-count="5" name="Verify that application is launch successfully, Verify the title of the page(failed)">
-    <classes>
-      <class name="Test.HomePage">
-        <methods>
-          <include name="teardown"/>
-          <include name="initializerDriver"/>
-          <include name="Titlename"/>
-        </methods>
-      </class> <!-- Test.HomePage -->
-    </classes>
-  </test> <!-- Verify that application is launch successfully, Verify the title of the page(failed) -->
-  <test thread-count="5" name="Verify that user can add to cart one or more products(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
       <class name="Test.Addnewproduct">
         <methods>
@@ -24,91 +10,5 @@
         </methods>
       </class> <!-- Test.Addnewproduct -->
     </classes>
-  </test> <!-- Verify that user can add to cart one or more products(failed) -->
-  <test thread-count="5" name="Verify that all the text – product, name, price is available(failed)">
-    <classes>
-      <class name="Test.Productinfo">
-        <methods>
-          <include name="initializerDriver"/>
-          <include name="productlist"/>
-          <include name="teardown"/>
-        </methods>
-      </class> <!-- Test.Productinfo -->
-    </classes>
-  </test> <!-- Verify that all the text – product, name, price is available(failed) -->
-  <test thread-count="5" name="Verify that user can successfully buy more than one products that were added to his/her cart(failed)">
-    <classes>
-      <class name="Test.PurchaseProduct">
-        <methods>
-          <include name="teardown"/>
-          <include name="productadd"/>
-        </methods>
-      </class> <!-- Test.PurchaseProduct -->
-    </classes>
-  </test> <!-- Verify that user can successfully buy more than one products that were added to his/her cart(failed) -->
-  <test thread-count="5" name="Validate that item removed from cart(failed)">
-    <classes>
-      <class name="Test.RemoveItem">
-        <methods>
-          <include name="deleteitem"/>
-          <include name="initializerDriver"/>
-          <include name="teardown"/>
-        </methods>
-      </class> <!-- Test.RemoveItem -->
-    </classes>
-  </test> <!-- Validate that item removed from cart(failed) -->
-  <test thread-count="5" name="Verify the title of the page(failed)">
-    <classes>
-      <class name="Test.HomePage">
-        <methods>
-          <include name="teardown"/>
-          <include name="initializerDriver"/>
-          <include name="Titlename"/>
-        </methods>
-      </class> <!-- Test.HomePage -->
-    </classes>
-  </test> <!-- Verify the title of the page(failed) -->
-  <test thread-count="5" name="Verify that filtering functionality correctly(failed)">
-    <classes>
-      <class name="Test.SizeFilters">
-        <methods>
-          <include name="size"/>
-          <include name="teardown"/>
-        </methods>
-      </class> <!-- Test.SizeFilters -->
-    </classes>
-  </test> <!-- Verify that filtering functionality correctly(failed) -->
-  <test thread-count="5" name="Verify that all the sort options work correctly Highest to Lowest(failed)">
-    <classes>
-      <class name="Test.SortHighesttoLowest">
-        <methods>
-          <include name="highestsort"/>
-          <include name="initializerDriver"/>
-          <include name="teardown"/>
-        </methods>
-      </class> <!-- Test.SortHighesttoLowest -->
-    </classes>
-  </test> <!-- Verify that all the sort options work correctly Highest to Lowest(failed) -->
-  <test thread-count="5" name="Verify that all the sort options work correctly Lowest to Highest(failed)">
-    <classes>
-      <class name="Test.SortLowesttoHighest">
-        <methods>
-          <include name="teardown"/>
-          <include name="initializerDriver"/>
-          <include name="lowsort"/>
-        </methods>
-      </class> <!-- Test.SortLowesttoHighest -->
-    </classes>
-  </test> <!-- Verify that all the sort options work correctly Lowest to Highest(failed) -->
-  <test thread-count="5" name="Validate the total amount of products in cart is equal to checkout amount.(failed)">
-    <classes>
-      <class name="Test.SumofProducts">
-        <methods>
-          <include name="additem"/>
-          <include name="initializerDriver"/>
-          <include name="teardown"/>
-        </methods>
-      </class> <!-- Test.SumofProducts -->
-    </classes>
-  </test> <!-- Validate the total amount of products in cart is equal to checkout amount.(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

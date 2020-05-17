@@ -14,6 +14,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
+import io.github.bonigarcia.wdm.ChromeDriverManager;
+import io.github.bonigarcia.wdm.DriverManagerType;
+import io.github.bonigarcia.wdm.FirefoxDriverManager;
+import io.github.bonigarcia.wdm.InternetExplorerDriverManager;
+
 public class Base {
 
 public static WebDriver driver;
@@ -35,18 +40,21 @@ public WebDriver initializerDriver(WebDriver driver) throws IOException {
 	
 	if(browserName.equals("chrome"))
 	{
-		System.setProperty("webdriver.chrome.driver",path+"\\resources\\chromedriver.exe");
+		ChromeDriverManager.getInstance(DriverManagerType.CHROME).setup();
+		//System.setProperty("webdriver.chrome.driver",path+"\\resources\\chromedriver.exe");
 	
 		driver =new ChromeDriver();
 	}
 	else if(browserName.equals("firefox"))
 	{
-		System.setProperty("Webdriver.gecko.driver",path+"\\resources\\geckodriver.exe");
-		  driver = new FirefoxDriver();
+		FirefoxDriverManager.getInstance(DriverManagerType.FIREFOX).setup();
+		//System.setProperty("webdriver.gecko.driver",path+"\\resources\\geckodriver.exe");
+          
 	}
 	else if(browserName.equals("IE"))
 	{
-		System.setProperty("webdriver.IE.driver",path+"\\resourcess\\IEDriverServer.exe");
+		InternetExplorerDriverManager.getInstance(DriverManagerType.IEXPLORER).setup();
+		//System.setProperty("webdriver.IE.driver",path+"\\resourcess\\IEDriverServer.exe");
 		 driver = new InternetExplorerDriver();
 	}
 	 

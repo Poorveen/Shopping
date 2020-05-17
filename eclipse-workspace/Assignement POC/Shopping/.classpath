@@ -37,5 +37,14 @@
 	<classpathentry kind="lib" path="C:/Users/poorveen.patel/Downloads/selenium-server-3.141.59/selenium-3.141.59-nodeps-sources.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/3"/>
 	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Users/poorveen.patel/.m2/repository/io/github/bonigarcia/webdrivermanager/3.2.0/webdrivermanager-3.2.0.jar" sourcepath="C:/Users/poorveen.patel/.m2/repository/io/github/bonigarcia/webdrivermanager/3.2.0/webdrivermanager-3.2.0-sources.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="io.github.bonigarcia"/>
+			<attribute name="maven.artifactId" value="webdrivermanager"/>
+			<attribute name="maven.version" value="3.2.0"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
