@@ -44,6 +44,7 @@ public WebDriver initializerDriver(WebDriver driver) throws IOException {
 		//System.setProperty("webdriver.chrome.driver",path+"\\resources\\chromedriver.exe");
 	
 		driver =new ChromeDriver();
+		
 	}
 	else if(browserName.equals("firefox"))
 	{

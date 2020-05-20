@@ -8,17 +8,17 @@ import org.testng.annotations.Test;
 import junit.framework.Assert;
 import resources.Base;
 
-//Verify the title of the page
+
 
 public class HomePage extends Base {
 
-	@BeforeTest
+	@BeforeTest 
 	public void initializerDriver() throws IOException {
 		driver = initializerDriver(driver);
 		driver.get("https://react-shopping-cart-67954.firebaseapp.com");
 
 	}
-
+	 //Verify the title of the page
 	@Test(priority = 3, groups = { "Demo" })
 	public void Titlename() {
 		String title = driver.getTitle();
