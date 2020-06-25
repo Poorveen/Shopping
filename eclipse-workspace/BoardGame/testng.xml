@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<listeners>
+		<listener class-name="Test.Listeners" />
+		<listener class-name="resources.ExtentReporterNG" />
+
+	</listeners>
+	<test name="Verify that the game collection of a user is open.">
+		<classes>
+			<class name="Test.BoardGameTest" />
+		</classes>
+	</test>
+	<test name="Verify that the page of one of the games (chosen at random)">
+		<classes>
+			<class name="Test.BoardGameTest2" />
+		</classes>
+	</test>
+	<test name="Verify that the most voted Language Dependence level is presented on the game's page.">
+		<classes>
+			<class name="Test.BoardGameTest2" />
+		</classes>
+	</test>
+</suite>
